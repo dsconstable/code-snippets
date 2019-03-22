@@ -1,0 +1,7 @@
+REM Code to compress (currently to .zip) all sub-directories as individual folders. Uses 7-Zip.
+
+@echo off
+setlocal
+for /d %%x in (C:\SET WD\*.*) do "C:\Program Files\7-Zip\7z.exe" a -tzip "%%x.zip" "%%x\"
+endlocal
+exit
